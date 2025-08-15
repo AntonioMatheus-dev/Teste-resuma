@@ -197,13 +197,14 @@ img#lupa {
 
 #nomes {
     position: fixed;
-    bottom: 0;
+    bottom: env(safe-area-inset-bottom); /* Ajusta pro espaço seguro no celular */
     left: 0;
     display: flex;
     flex-direction: column; /* Um embaixo do outro */
-    align-items: flex-start; /* Alinha à esquerda */
-    gap: 5px; /* Espaço entre nomes */
+    align-items: flex-start;
+    gap: 5px;
     padding: 10px;
+    background: transparent; /* Ou coloque uma cor se precisar contraste */
 }
 
 #nomes p {
@@ -211,6 +212,7 @@ img#lupa {
     text-align: left;
     white-space: normal;
 }
+
 
 
 
