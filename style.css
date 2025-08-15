@@ -190,12 +190,22 @@ img#lupa {
     font-size: small;
 }
 
-#nomes{
-    margin-right: 990px;
-    margin-top: 220px;
-    width: 250px;
-}
 .Botao_arquivo:disabled {
   cursor: not-allowed;
   opacity: 0.6;
 }
+
+#nomes {
+    display: flex;
+    flex-direction: column; /* Empilha um embaixo do outro */
+    align-items: left;    /* Centraliza no meio */
+    gap: 5px;
+    margin-top: 170px;               /* Espaço entre os nomes */
+}
+
+#nomes p {
+    margin: 0;
+    text-align: left; /* Centraliza o texto */
+    white-space: normal; /* Permite quebra de linha */
+}
+
