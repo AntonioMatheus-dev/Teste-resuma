@@ -200,8 +200,9 @@ img#lupa {
     bottom: 0;
     left: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: flex-start; /* Alinha à esquerda */
+    gap: 5px; /* Espaço entre nomes */
     padding: 10px;
 }
 
